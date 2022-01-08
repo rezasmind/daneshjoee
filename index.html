@@ -18,12 +18,17 @@
 
         <h2>پلتفرم برنامه ریزی درسی برای دانشجویان</h2>
 
-        <div class="course">
-            <input type="value" placeholder="واحد">
-            <input type="course-name" placeholder="نام درس ">
+        <div id="courses" class="courses">
+            <div class="course">
+                <input type="number" placeholder="واحد" >
+                <input type="text" placeholder="نام درس ">
+                
+            </div>
         </div>
 
-        <button class="add-course"> + اضافه کردن درس </button>
+
+        <button class="add-course" id="add-course"> + اضافه کردن درس </button>
+        
 
         <div class="time">
             <select class="day" name="day" id="day" required>
@@ -42,9 +47,17 @@
         </div>
         
         
-        <button class="plan"> برنامه ریزی کن </button>
+        <button class="plan" id="plan"> برنامه ریزی کن </button>
+
+
 
     </div>
-    
+
+    <footer>
+        <h3>
+        ساخته شده با ❤️ توسط <a href="https://twitter.com/boredreza/ " target="_blank">رضا آقاجانی</a> </h4>
+    </footer>
+
+    <script src="./scripts/script.js"></script>
 </body>
 </html>

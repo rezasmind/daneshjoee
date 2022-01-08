@@ -19,7 +19,7 @@
     box-sizing: border-box;
 }
 
-p,b,span,h1,h2,h3,h4,input,button, select {
+p,b,span,h1,h2,h3,h4,input,button, select,a {
     font-family: "IRS";
     color: white;
 }
@@ -29,6 +29,10 @@ body {
     height: 100vh;
     background: linear-gradient(to left, #5DF8AA, #00FF80);
     direction: rtl;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .container {
@@ -62,7 +66,7 @@ body {
     opacity: 0.95;
 }
 
-.add-course {
+.add-course, .dlt-course {
     background: none;
     font-family: IRSBB;
     font-size: 16px;
@@ -70,6 +74,12 @@ body {
     padding: 7px 10px;
     border-radius: 35px;
     margin-top: 15px;
+}
+
+.add-course:hover, .dlt-course:hover {
+    background: white;
+    color: #5DF8AA;
+    cursor: pointer;
 }
 
 .time select {
@@ -117,3 +127,11 @@ body {
     margin-top: 15px;
     color: #5DF8AA;
 }
+
+.plan:hover {
+    background: #5DF8AA;
+    color: white;
+    cursor: pointer;
+}
+
+footer { margin-bottom: 10px; }
