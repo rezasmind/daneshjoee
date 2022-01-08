@@ -10,9 +10,41 @@
     <meta name="robots" content="index, nofollow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="author" content="Reza Aghajani | @BoredReza">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1 class="logo">دانشجویی <br></h1>
+
+        <h2>پلتفرم برنامه ریزی درسی برای دانشجویان</h2>
+
+        <div class="course">
+            <input type="value" placeholder="واحد">
+            <input type="course-name" placeholder="نام درس ">
+        </div>
+
+        <button class="add-course"> + اضافه کردن درس </button>
+
+        <div class="time">
+            <select class="day" name="day" id="day" required>
+                <option value="">روز</option>
+                <option value="1">شنبه</option>
+                <option value="2">یکشنبه</option>
+                <option value="3">دوشنبه</option>
+                <option value="4">سه شنبه</option>
+                <option value="5">چهار شنبه</option>
+                <option value="6">پنج شنبه</option>
+                <option value="7">جمعه</option>
+            </select>
+            <span>به مدت</span>
+            <input type="number" class="hours">
+            <span>ساعت</span>
+        </div>
+        
+        
+        <button class="plan"> برنامه ریزی کن </button>
+
+    </div>
     
 </body>
 </html>
